@@ -1,16 +1,16 @@
 RSpec.describe Product, type: :model do
-  describe "Databesed table" do
-    it {is_expected.to have_db_column(:id).of_type(:integer)}
+  describe 'Databesed table' do
+    it { is_expected.to have_db_column(:id).of_type(:integer) }
 
-    it {is_expected.to have_db_column(:name).of_type(:string) }
-    it {is_expected.to have_db_column(:price).of_type(:float) }
+    it { is_expected.to have_db_column(:name).of_type(:string) }
+    it { is_expected.to have_db_column(:price).of_type(:float) }
   end
 
   # describe "Assosiations" do
   # end
 
-  describe "Factory" do
-    it "is expected to be valid" do
+  describe 'Factory' do
+    it 'is expected to be valid' do
       expect(create(:product)).to be_valid
     end
   end
